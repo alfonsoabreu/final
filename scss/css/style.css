@@ -1,0 +1,67 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 768px) {
+  .grid-padre {
+    grid-template-columns: 3fr;
+    grid-template-areas: "seccion" "seccion" "seccion";
+    grid-template-rows: 33% 33% 33%;
+    row-gap: 2.5px;
+    display: grid;
+  }
+}
+/* espaciado para mejor visualicacion */
+div {
+  padding: 10px;
+  /* conteido con informacion acerca de las paginas*/
+}
+div p {
+  text-align: center;
+}
+div footer {
+  text-align: center;
+}
+div a {
+  display: inline-block;
+  padding: 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.grid-padre {
+  display: grid;
+  grid-template-rows: 30vh 30vh 30vh;
+  grid-template-areas: "seccion seccion seccion";
+}
+
+img {
+  justify-items: center;
+  align-items: center;
+  border-radius: 5%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
+  width: 350px;
+  height: 350px;
+}
+
+a:hover {
+  font-weight: bold;
+  padding: 1vh;
+  background-color: rebeccapurple;
+  color: black;
+}
+
+.button .button--limpiar {
+  color: gainsboro;
+}
+
+/*extencion para button*/
+button--limpiar {
+  color: gray;
+}/*# sourceMappingURL=style.css.map */

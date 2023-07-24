@@ -1,0 +1,48 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+@media screen and ( max-width:768px ) {
+    header nav {
+  width: 80%;
+  height: 100%;
+  margin: 0;
+  position: fixed;
+  }
+}
+
+div {
+    padding: 10px;
+}
+p {
+    text-align: center;
+  }
+  footer {
+    text-align: center;
+  }
+
+a {
+    display: inline-block;
+    padding: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+img  {
+    justify-items: center;
+    align-items: center;
+    border-radius: 5%;
+    object-fit: cover;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    width: 350px;
+    height: 350px;
+}
+
+a:hover {
+    font-weight: bold;
+    padding: 1vh;
+    background-color: rebeccapurple;
+    color: black;
+}

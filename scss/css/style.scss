@@ -1,0 +1,73 @@
+@import "./resetear.scss";
+
+@media screen and ( max-width:768px ) {
+  .grid-padre{
+  grid-template-columns: 3fr;
+  grid-template-areas: 
+  "seccion" 
+  "seccion"
+  "seccion";
+  grid-template-rows: 33% 33% 33%;
+  row-gap: 2.5px;
+  display: grid;
+  }
+}
+
+@mixin img ($jst, $lng) {
+justify-items: $jst;
+align-items: $lng;
+}
+
+/* espaciado para mejor visualicacion */
+div {
+padding: 10px;
+/* conteido con informacion acerca de las paginas*/
+p {
+    text-align: center;
+  }
+  footer {
+    text-align: center;
+
+}
+
+a {
+display: inline-block;
+padding: 10px;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+}
+.grid-padre {
+display: grid;
+grid-template-rows: 30vh 30vh 30vh;
+grid-template-areas: "seccion seccion seccion";
+}
+
+img  {
+  justify-items: center;
+  align-items: center;
+  border-radius: 5%;
+  object-fit: cover;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
+  width: 350px;
+  height: 350px;
+}
+$barranav: rebeccapurple;
+$oscuro: black;	
+a:hover {
+  font-weight: bold;
+  padding: 1vh;
+  background-color: $barranav;
+  color: $oscuro;
+}
+
+.button .button--limpiar{
+  color: gainsboro
+}
+/*extencion para button*/
+button--limpiar {
+@extend button--limpiar;
+color: gray;
+}
